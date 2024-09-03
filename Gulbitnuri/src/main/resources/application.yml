@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${DB_URL}
+    username: root
+    password: ${DB_PW}
+
+  config:
+    import: optional:file:.env[.properties]
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    cache: false
+    check-template-location: true
+    suffix: .html
+    enabled: true
