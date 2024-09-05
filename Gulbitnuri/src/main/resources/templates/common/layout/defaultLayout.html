@@ -11,8 +11,10 @@
     <div id="content-wrapper" class="d-flex flex-column">
         <div id="content">
             <header th:replace="~{common/fragments/header :: HeaderFragment}"></header>
-
-            <th:block layout:fragment="Content"></th:block>
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+                <th:block layout:fragment="Content"></th:block>
+            </div>
         </div>
         <!-- End of Main Content -->
         <footer th:replace="~{common/fragments/footer :: FooterFragment}"></footer>

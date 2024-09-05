@@ -9,8 +9,50 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MainController {
     @GetMapping("/")
-    public String selectImageList(Model model){
+    public String getMainPage(Model model){
         model.addAttribute("title","");
-        return "pages/test/testPage";
+        return "pages/test/mainPage";
+    }
+
+    @GetMapping("/logout")
+    public String logout(Model model){
+        model.addAttribute("title","");
+        return "redirect:/login";
+    }
+
+    @GetMapping("/login")
+    public String getLoginPage(Model model){
+        model.addAttribute("title","");
+        return "pages/test/loginPage";
+    }
+
+    @GetMapping("/register")
+    public String getRegisterPage(Model model){
+        model.addAttribute("title","");
+        return "pages/test/registerPage";
+    }
+
+    @GetMapping("/finduser")
+    public String getFindUserPage(Model model){
+        model.addAttribute("title","");
+        return "pages/test/findUserPage";
+    }
+
+    @GetMapping("/letterlist")
+    public String getLetterListPage(Model model){
+        model.addAttribute("title","");
+        return "pages/test/letterListPage";
+    }
+
+    @GetMapping("/letterwrite")
+    public String getLetterWritePage(Model model){
+        model.addAttribute("title","");
+        return "pages/test/letterWritePage";
+    }
+
+    @GetMapping("/mypage")
+    public String getMyPage(Model model){
+        model.addAttribute("title","");
+        return "pages/test/myPage";
     }
 }
