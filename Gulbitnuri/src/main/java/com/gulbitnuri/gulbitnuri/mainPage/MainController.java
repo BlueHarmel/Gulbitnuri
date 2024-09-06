@@ -55,4 +55,10 @@ public class MainController {
         model.addAttribute("title","");
         return "pages/test/myPage";
     }
+
+    @GetMapping("/detail")
+    public String getLetterDetailPage(Model model){
+        model.addAttribute("title","");
+        return "pages/test/letterDetailPage";
+    }
 }

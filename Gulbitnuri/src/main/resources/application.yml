@@ -19,3 +19,7 @@ spring:
     check-template-location: true
     suffix: .html
     enabled: true
+server:
+  error:
+    whitelabel:
+      enabled: false
