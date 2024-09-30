@@ -1,4 +1,4 @@
-package com.gulbitnuri.gulbitnuri.mainPage;
+package com.gulbitnuri.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -24,12 +24,6 @@ public class MainController {
     public String getLoginPage(Model model){
         model.addAttribute("title","");
         return "pages/test/loginPage";
-    }
-
-    @GetMapping("/register")
-    public String getRegisterPage(Model model){
-        model.addAttribute("title","");
-        return "pages/test/registerPage";
     }
 
     @GetMapping("/finduser")

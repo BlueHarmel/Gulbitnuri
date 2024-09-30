@@ -2,7 +2,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: ${DB_URL}
-    username: root
+    username: ${DB_USER}
     password: ${DB_PW}
 
   config:
@@ -12,6 +12,8 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
+        ddl-auto: none
+    show-sql: true
 
   thymeleaf:
     prefix: classpath:/templates/
@@ -19,6 +21,7 @@ spring:
     check-template-location: true
     suffix: .html
     enabled: true
+
 server:
   error:
     whitelabel:

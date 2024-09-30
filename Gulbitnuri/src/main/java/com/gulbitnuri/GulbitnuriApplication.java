@@ -1,4 +1,4 @@
-package com.gulbitnuri.gulbitnuri;
+package com.gulbitnuri;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

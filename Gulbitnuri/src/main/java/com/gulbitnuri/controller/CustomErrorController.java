@@ -1,4 +1,4 @@
-package com.gulbitnuri.gulbitnuri.mainPage;
+package com.gulbitnuri.controller;
 
 import jakarta.servlet.RequestDispatcher;
 import org.springframework.boot.web.servlet.error.ErrorController;
